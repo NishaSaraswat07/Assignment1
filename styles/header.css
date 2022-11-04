@@ -9,7 +9,7 @@ header>img {
     margin-left: 15px;
 }
 
-#toggle{
+#toggle {
     display: none;
 }
 
@@ -29,17 +29,27 @@ nav a:hover {
 
 }
 
+#home-page .homeLink,
+#funfact-page .factLink,
+#contact-page .contactLink {
+    background-color: #FFCD00;
+    border-radius: 20px;
+    padding: 8px;
+}
+
 @media screen and (max-width: 999px) {
 
     header {
         margin-bottom: 100px;
     }
-    #toggle{
-        display:block;
+
+    #toggle {
+        display: block;
     }
+
     .navigation .menu {
-       
-        display:none
+
+        display: none
     }
 
     nav a {
@@ -48,12 +58,12 @@ nav a:hover {
 
     }
 
-    input:checked ~ .navigation .menu {
+    input:checked~.navigation .menu {
         display: flex;
         flex-direction: column;
-        position: absolute; 
+        position: absolute;
         margin-left: -170px;
-        
+
     }
 
     input {
@@ -89,25 +99,30 @@ nav a:hover {
         background-color: #004B87;
         border-radius: 10px;
     }
-    .menubar-lines .line1{
+
+    .menubar-lines .line1 {
         transform-origin: 0% 0%;
         transition: transform 0.5s ease-out;
 
     }
-    .menubar-lines .line3{
+
+    .menubar-lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.5s ease-out;
     }
-    input:checked ~ .menubar-lines .line1{
+
+    input:checked~.menubar-lines .line1 {
         transform: rotate(45deg);
         margin-top: 2px;
-       
+
     }
-    input:checked ~ .menubar-lines .line3{
+
+    input:checked~.menubar-lines .line3 {
         transform: rotate(-45deg);
     }
-    input:checked ~ .menubar-lines .line2{
+
+    input:checked~.menubar-lines .line2 {
         display: none;
 
-}
+    }
 }

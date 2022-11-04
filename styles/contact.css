@@ -1,0 +1,10 @@
+.main-content {
+    display: flex;
+    align-items: center;
+    color: #004B87;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+}

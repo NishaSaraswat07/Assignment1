@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    background-color: #004B87;
+    color: #ffffff;
+    margin-top: 20px;
+}
+footer>i{
+    margin: 0 0 10px 12px;
+    
+}
+footer>h4{
+    margin-bottom: 6px;
+}

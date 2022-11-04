@@ -2,12 +2,12 @@ footer {
     text-align: center;
     background-color: #004B87;
     color: #ffffff;
-    margin-top: 20px;
+    padding-top: 30px;
 }
 footer>i{
-    margin: 0 0 10px 12px;
+    margin: 0 0 10px 10px;
     
 }
 footer>h4{
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }

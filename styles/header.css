@@ -1,5 +1,6 @@
 header {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding-top: 30px;
 }
@@ -7,9 +8,10 @@ header {
 header>img {
     margin-left: 15px;
 }
-.logo{
+
+.logo {
     height: auto;
-    width: 80px;
+    width: 100px;
 }
 
 #toggle {
@@ -17,13 +19,19 @@ header>img {
 }
 
 .navigation {
+    display: flex;
+    justify-content: flex-end;
+    height: 120px;
+    width: 100%;
+    margin: 0 40px 0;
     padding-top: 66px;
 }
 
 .menu {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     margin-left: 20px;
 }
@@ -53,24 +61,25 @@ nav a:hover {
     }
 
     .navigation .menu {
-        display: none
+        display: none;
     }
 
     input:checked~.navigation .menu {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin: 15px;
+        flex-direction: column;
         position: absolute;
+        margin-top: 40px;
     }
-    .menu a{
+
+    .menu a {
         margin-bottom: 20px;
     }
 
     input[type=checkbox] {
         position: absolute;
         right: 0px;
-        margin-right: 11%;
+        margin-right: 6%;
         margin-top: 25px;
         height: 35px;
         width: 40px;
@@ -87,7 +96,7 @@ nav a:hover {
         position: absolute;
         right: 0px;
         padding: 2px;
-        margin-right: 11%;
+        margin-right: 6%;
         margin-top: 25px;
         border-radius: 50%;
         z-index: 2;

@@ -37,6 +37,13 @@
 }
 
 @media screen and (max-width:999px) {
+    .main-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
 
     .fact {
         border-bottom: 0.5px solid rgba(119, 113, 113, 0.316);

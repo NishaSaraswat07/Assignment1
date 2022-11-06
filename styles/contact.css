@@ -1,6 +1,7 @@
 .form-container {
     display: flex;
     align-items: center;
+    align-content: center;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
@@ -35,22 +36,27 @@ input {
     margin-top: 7px;
 }
 
-input {
+input[type="text"] {
     padding: 8px 50px;
+    max-width: 100%;
     margin-bottom: 40px;
     text-align: center;
 }
 
 textarea {
+    cursor: all-scroll;
     margin-bottom: 70px;
-    height: 30%;
-    width: 100%;
+    min-height: 30%;
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
 }
 
 input[type=submit] {
     background-color: #FFCD00;
     border-radius: 15px;
     border-style: none;
+    border-width: 0;
     margin-left: 80px;
     padding: 7px 20px;
 }

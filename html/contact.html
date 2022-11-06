@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/contact.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -27,12 +26,21 @@
             <div class="menu">
                 <a href="../html/index.html" class="homeLink">Home</a>
                 <a href="../html/funfact.html" class="factLink">Facts</a>
-                <a href="../html/contact.html" class="contactLink">Contact Us</a>
+                <a href="../html/contact.html" class="contactLink">Contact</a>
             </div>
         </nav>
     </header>
-    <div class="main-content">
-
+    <div class="form-container">
+        <h1 class="title">Contact</h1>
+        <p class="subtitle">Write to us and we will send you more fun facts!</p>
+            <form>
+                <label class="required" for="email">Email</label>
+                <input type="text" name="email" placeholder="email" required="true">
+                <lable class="required" for="message">Message</lable>
+                <textarea name="subject" placeholder="Write to us...." required="true">
+                </textarea>
+                <input type="submit">
+            </form>
     </div>
     <footer>
         <h4> © Nisha 2022 </h4>

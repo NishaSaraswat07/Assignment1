@@ -12,6 +12,10 @@ img {
     border-radius: 25px;
 
 }
+span{
+    letter-spacing: 0.1rem;
+    line-height: 1.5em;
+}
 
 .main-content {
     display: flex;
@@ -39,17 +43,12 @@ img {
 
 }
 
-@media screen and (max-width: 999px) {
-    .main-content .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-        align-items: center;
-
+@media screen and (max-width:999px) {
+    .main-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 200px;
     }
-
-    .card {
-        margin-left: 50%;
-        margin-bottom: 15px;
-    }
+    
 }

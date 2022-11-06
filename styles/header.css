@@ -1,31 +1,35 @@
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 30px;
 }
 
 header>img {
     margin-left: 15px;
 }
+.logo{
+    height: auto;
+    width: 80px;
+}
 
 #toggle {
     display: none;
 }
 
-nav {
+.navigation {
     padding-top: 66px;
 }
 
-nav a {
+.menu {
+    font-size: 1rem;
+}
+nav a{
     text-decoration: none;
     margin-left: 20px;
-    margin-right: 40px;
-    font-size: 1rem;
 }
 
 nav a:hover {
-    color: #FFCD00;
+    color: #3772FF;
 
 }
 
@@ -34,7 +38,8 @@ nav a:hover {
 #contact-page .contactLink {
     background-color: #FFCD00;
     border-radius: 20px;
-    padding: 8px;
+    padding: 4px 20px;
+    text-align: center;
 }
 
 @media screen and (max-width: 999px) {
@@ -48,25 +53,21 @@ nav a:hover {
     }
 
     .navigation .menu {
-
         display: none
-    }
-
-    nav a {
-        margin-top: 15px;
-        margin-bottom: 20px;
-
     }
 
     input:checked~.navigation .menu {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: 15px;
         position: absolute;
-        margin-left: -170px;
-
+    }
+    .menu a{
+        margin-bottom: 20px;
     }
 
-    input {
+    input[type=checkbox] {
         position: absolute;
         right: 0px;
         margin-right: 11%;

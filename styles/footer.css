@@ -1,7 +1,9 @@
 footer {
-    text-align: center;
     background-color: #004B87;
     color: #ffffff;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
     padding-top: 30px;
 }
 footer>i{

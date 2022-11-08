@@ -9,17 +9,18 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
     padding: 0;
 }
 
-
 .title {
-    display: inline-block;
     color: #004B87;
+    display: inline-block;
+    font-size: 2.4rem;
     letter-spacing: 0.7px;
+    margin-top: 30px;
     text-align: center;
 }

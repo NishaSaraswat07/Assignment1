@@ -1,17 +1,13 @@
 header {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-around;
     padding-top: 30px;
 }
 
-header>img {
-    margin-left: 15px;
-}
-
-.logo {
+.logo img {
     height: auto;
-    width: 100px;
+    min-width: 100%;
 }
 
 #toggle {
@@ -19,26 +15,26 @@ header>img {
 }
 
 .navigation {
+    height: 120px;
+    width: 72%;
     display: flex;
     justify-content: flex-end;
-    height: 120px;
-    width: 100%;
-    margin: 0 40px 0;
-    padding-top: 66px;
+    padding-top: 70px;
 }
 
 .menu {
     font-size: 1.2rem;
 }
 
-nav a {
-    text-decoration: none;
+.menu a {
     margin-left: 20px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-decoration: none;
 }
 
 nav a:hover {
     color: #3772FF;
-
 }
 
 #home-page .homeLink,
@@ -50,7 +46,8 @@ nav a:hover {
     text-align: center;
 }
 
-@media screen and (max-width: 999px) {
+/* Media Query */
+@media screen and (max-width: 991px) {
 
     header {
         margin-bottom: 100px;
@@ -73,47 +70,47 @@ nav a:hover {
     }
 
     .menu a {
+        font-size: 1rem;
         margin-bottom: 20px;
     }
 
     input[type=checkbox] {
-        position: absolute;
-        right: 0px;
-        margin-right: 6%;
-        margin-top: 25px;
         height: 35px;
         width: 40px;
+        margin-right: 6%;
+        margin-top: 25px;
         opacity: 0;
+        position: absolute;
+        right: 0px;
         z-index: 5;
     }
 
     .menubar-lines {
+        height: 35px;
+        width: 40px;
+        border-radius: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 35px;
-        width: 40px;
-        position: absolute;
-        right: 0px;
-        padding: 2px;
         margin-right: 6%;
         margin-top: 25px;
-        border-radius: 50%;
+        padding: 2px;
+        position: absolute;
+        right: 0px;
         z-index: 2;
     }
 
     .menubar-lines .line {
-        display: block;
         height: 4px;
         width: 100%;
         background-color: #004B87;
         border-radius: 10px;
+        display: block;
     }
 
     .menubar-lines .line1 {
         transform-origin: 0% 0%;
         transition: transform 0.5s ease-out;
-
     }
 
     .menubar-lines .line3 {
@@ -124,7 +121,6 @@ nav a:hover {
     input:checked~.menubar-lines .line1 {
         transform: rotate(45deg);
         margin-top: 2px;
-
     }
 
     input:checked~.menubar-lines .line3 {
@@ -133,6 +129,5 @@ nav a:hover {
 
     input:checked~.menubar-lines .line2 {
         display: none;
-
     }
 }

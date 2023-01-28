@@ -36,6 +36,7 @@
     padding: 0 10px 0 10px;
     text-align: justify;
 }
+@media screen and (max-width:999px) {
 /* Media Query */
 @media screen and (max-width:991px) {
     .main-section {

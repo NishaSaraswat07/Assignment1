@@ -4,6 +4,7 @@
     display: flex;
     align-content: center;
     align-items: center;
+    align-content: center;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
@@ -41,11 +42,16 @@ input {
 input[type="text"] {
     max-width: 100%;
     padding: 8px 50px;
+    max-width: 100%;
     margin-bottom: 40px;
     text-align: center;
 }
 
 textarea {
+    cursor: all-scroll;
+    margin-bottom: 70px;
+    min-height: 30%;
+    min-width: 100%;
     min-height: 50%;
     min-width: 100%;
     cursor: all-scroll;

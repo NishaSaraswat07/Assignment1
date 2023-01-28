@@ -1,10 +1,18 @@
 header {
     align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding-top: 30px;
 }
 
+header>img {
+    margin-left: 15px;
+}
+
+.logo {
+    height: auto;
+    width: 100px;
 .logo img {
     height: auto;
     min-width: 100%;
@@ -15,6 +23,12 @@ header {
 }
 
 .navigation {
+    display: flex;
+    justify-content: flex-end;
+    height: 120px;
+    width: 100%;
+    margin: 0 40px 0;
+    padding-top: 66px;
     height: 120px;
     width: 72%;
     display: flex;
@@ -26,6 +40,8 @@ header {
     font-size: 1.2rem;
 }
 
+nav a {
+    text-decoration: none;
 .menu a {
     margin-left: 20px;
     font-size: 1.4rem;
@@ -66,6 +82,10 @@ nav a:hover {
         align-items: center;
         flex-direction: column;
         position: absolute;
+        margin-top: 40px;
+    }
+
+    .menu a {
         margin-top: 20px;
     }
 
@@ -75,6 +95,10 @@ nav a:hover {
     }
 
     input[type=checkbox] {
+        position: absolute;
+        right: 0px;
+        margin-right: 6%;
+        margin-top: 25px;
         height: 35px;
         width: 40px;
         margin-right: 6%;
@@ -97,6 +121,10 @@ nav a:hover {
         padding: 2px;
         position: absolute;
         right: 0px;
+        padding: 2px;
+        margin-right: 6%;
+        margin-top: 25px;
+        border-radius: 50%;
         z-index: 2;
     }
 

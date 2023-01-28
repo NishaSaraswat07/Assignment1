@@ -1,16 +1,22 @@
 footer {
+    height: auto;
+    max-width: 100%;
     background-color: #004B87;
     color: #ffffff;
+
     max-width: 100%;
     height: auto;
     text-align: center;
     margin-top: 30px;
+    margin-top: 80px;
     padding-top: 30px;
+    text-align: center;
 }
-footer>i{
+
+footer i {
     margin: 0 0 10px 10px;
-    
 }
-footer>h4{
+
+footer h4 {
     margin-bottom: 10px;
 }
